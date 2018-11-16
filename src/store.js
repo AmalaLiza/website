@@ -22,8 +22,6 @@ export default function configureStore() {
                 },
             }) : compose;
 
-    debuggerd
-
     const enhancer = composeEnhancers(applyMiddleware(sagaMiddleware));
 
     //Creating the redux-store from reducers and enhancers.
