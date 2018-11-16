@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  font-size: 12px;
+  font-family: "Open Sans";
+  background-color: mediumvioletred;
+
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.url {
+  cursor: pointer;
+}
+
+.fleft {
+  float: left;
+}
+
+.fright {
+  float: right;
+}
+
+.opacity {
+  opacity: 0;
+}

@@ -1,0 +1,118 @@
+.sidebar {
+    grid-area: sidebar;
+}
+
+.sidebar2 {
+    grid-area: sidebar2;
+}
+
+.content {
+    grid-area: content;
+}
+
+.header {
+    grid-area: header;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.wrapper {
+    background-color: #fff;
+    color: #444;
+    display: grid;
+    grid-gap: 1em;
+    grid-template-areas: "header" "sidebar" "sidebar2" "content" "footer"
+}
+
+/*@media only screen and (min-width: 500px) {*/
+/*.wrapper {*/
+
+/*grid-template-columns: 20% auto;*/
+/*grid-template-areas: "header   header" "sidebar  content" "sidebar2 sidebar2" "footer   footer";*/
+/*}*/
+/*}*/
+
+@media screen and (max-width: 600px) {
+    body {
+        background-color: lightgreen;
+    }
+
+    .wrapper {
+        grid-template-columns: 200px auto;
+        grid-template-areas: "header   header" "sidebar  sidebar" "sidebar2 sidebar2" "content content" "footer   footer";
+    }
+
+}
+
+@media only screen and (min-width: 600px) {
+    body {
+        background-color: lightcoral;
+    }
+
+    .wrapper {
+        grid-gap: 20px;
+        grid-template-columns: 200px 120px auto;
+        grid-template-areas: "header  header  header" "sidebar sidebar2 content " "footer  footer  footer";
+    }
+}
+
+.box {
+    background-color: #444;
+    color: #fff;
+    padding: 10px;
+    font-size: 150%;
+}
+
+.header,
+.footer {
+    background-color: #999;
+}
+
+.sidebar2 {
+    background-color: #ccc;
+    color: #444;
+}
+
+.block {
+    display: block;
+    background-color: aqua;
+}
+
+.inlineBlock {
+    display: inline-block;
+    background-color: red;
+}
+
+.inline {
+    display: inline;
+    background-color: blue;
+}
+
+p + p {
+    text-indent: 1.5em;
+    margin-bottom: 0;
+    color: brown;
+}
+
+p::before {
+    content: 'hi';
+}
+
+/* The following rule selects any content placed after a "q" element and inserts the smart close quote. */
+
+p::after {
+    content: 'hi';
+}
+
+blockquote:before {
+    content : "Quote of the day:";
+    background-color : #ccffcc;
+    font-weight : bold;
+    font-variant : small-caps;
+}
+
+li:nth-child(2n) {
+    color: #ccffcc;
+}
