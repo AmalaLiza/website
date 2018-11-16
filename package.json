@@ -1,7 +1,7 @@
 {
-  "name": "wake-cap",
+  "name": "website",
   "version": "1.0.0",
-  "description": "A react-redux application to list all the public gists and other details of a user.",
+  "description": "Website",
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
